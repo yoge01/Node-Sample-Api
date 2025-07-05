@@ -62,10 +62,10 @@ const studentRoutes = require("./Routes/Studentroutes")(pool, authenticateToken)
 app.use("/api", studentRoutes);
 
 // Start server
-// app.listen(3005, () => {
-//   console.log(`🚀 API server running at ${port}`);
-// });
-
 app.listen(3005, () => {
-  console.log('🚀 API server running at http://localhost:3005');
+  console.log(`🚀 API server running at ${port}`);
 });
+
+// app.listen(3005, () => {
+//   console.log('🚀 API server running at http://localhost:3005');
+// });
